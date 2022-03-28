@@ -1,0 +1,256 @@
+html, body {
+  margin: 0px;
+  height: 100%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 12px;
+}
+
+#sidebar {
+	grid-area: sidebar;
+	overflow-y: scroll;
+}
+
+#content {
+	grid-area: content;
+}
+
+.header {
+	grid-area: header;
+	font-family: Helvetica, sans-serif
+}
+
+.footer{
+  grid-area: footer;
+}
+
+.sideBarItem{
+	max-height: 50px;
+	max-width: 50px;
+	padding:5px;
+}
+
+.sideBarItem img{
+	max-height: 50px;
+	max-Width:50px;
+}
+
+.colourPalette{
+	grid-area: colourP;
+	display:flex;
+	flex-direction:grid;
+	flex-flow: wrap;
+}
+
+.options{
+	grid-area: options;
+	padding: 15px;
+    padding-left: 5px;
+}
+
+.colourSwatches{
+	box-sizing: border-box;
+	width: 40px;
+	height: 40px;
+	max-height: 40px;
+	max-width: 40px;
+	margin: 5px;
+}
+
+.wrapper {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 70px 230px  minmax(500px, 1fr);
+    grid-template-rows: 35px minmax(500px, 1fr) 160px;
+    grid-template-areas:
+           "header header header"
+            "sidebar content content"
+            "colourP colourP options";
+    background-color: #fff;
+    color: #444;
+}
+
+.box {
+  background-color: #3D9970;
+  color: #7CFC00;
+  font-family: Hand, cursive;
+  font-size: 180%;
+}
+
+
+.header {
+  background-color: #3D9970;
+}
+
+
+
+
+/*Making app appearnce better*/
+#fillInside
+{
+    background-color: #7CFC00;
+    border-radius: 25px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: none;
+    color: black;
+    margin-top: 10px;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 15px
+}
+
+#Stampwidth1,
+#Stampwidth2,
+#Stampheight3,
+#Stampheight4
+{
+    background-color: #7CFC00;
+    border-radius: 25px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: none;
+    color: black;
+    margin-left: 4px;
+    margin-top: 90px;
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 15px;
+    
+}
+
+#directionButton,
+#colourRate1,
+#colourRate2
+{ 
+    z-index: 99px;
+    background-color: #7CFC00;
+    border-radius: 25px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: none;
+    color: black;
+    margin-left: 4px;
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#Rate1,
+#Rate2,
+#Rate3,
+#Rate4
+{
+    float: left;
+    background-color: #7CFC00;
+    border-radius: 25px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: none;
+    color: black;
+    margin-left: 4px;
+    margin-right:110px;
+    margin-top: 4px;
+    padding: 1px 5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+label{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: BLACK;
+    padding: 10px 3px; 
+    text-align: center;
+    font-size: 15px
+}
+
+#strokeSize
+{
+    font-size: 15px;
+    border: none;
+    padding: 2px 0px 0px 10px;
+    width: 80px;
+}
+
+#loadImageButton,
+#saveImageButton,
+#clearButton
+{
+    border-radius: 25px;
+    background-color: #2ECC40;  
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: none;
+    color: black;
+    margin-top: 5px;
+    padding: 2px 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 773px)
+{
+    #blurImageButton,
+    #thresholdImageButton,
+    #grayImageButton,
+    #invertImageButton,
+    #posterizeImageButton,
+    #erodeImageButton
+    {
+        bottom: 10px;
+        border-radius: 25px;
+        position: relative;
+        background-color: #7CFC00;  
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        border: none;
+        color: Black;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding: 0px 5px;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    #invertImageButton
+    {
+        bottom: 23px;
+        margin-left: 440px;
+    }
+
+    #posterizeImageButton,
+    #erodeImageButton
+    {
+        bottom: 23px;
+    }
+}
+
+#blurImageButton,
+#thresholdImageButton,
+#grayImageButton,
+#invertImageButton,
+#posterizeImageButton,
+#erodeImageButton
+{
+    border-radius: 25px;
+    background-color: #7CFC00;  
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: none;
+    color: Black;
+    padding: 0px 5px;
+    text-align: center;
+    font-size: 10px;
+}
+
+::-webkit-scrollbar 
+{
+  width: 14px;
+  background: #3D9970;
+}
+
+::-webkit-scrollbar-track 
+{
+  box-shadow: inset 0 0 5px black;
+  background: #3D9970;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb 
+{
+  box-shadow: inset 0 0 5px black;
+  background: #7CFC00;
+  border-radius: 10px;
+}

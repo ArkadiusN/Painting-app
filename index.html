@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="lib/p5.min.js"></script>
+
+    <script src="sketch.js"></script>
+
+    <!-- add extra scripts below -->
+    <script src="toolbox.js"></script>
+    <script src="colourPalette.js"></script>
+    <script src="helperFunctions.js"></script>
+      
+    <script src="startrialTool.js"></script>
+    <script src="stampToolYes.js"></script> 
+    <script src="stampToolNo.js"></script> 
+    <script src="spirographTool.js"></script>
+    <script src="ellipseTool.js"></script>
+    <script src="rectangleTool.js"></script>
+    <script src="Eraser.js"></script>
+    <script src="RainbowTool.js"></script>
+    <script src="polylineTool.js"></script>
+    <script src="freehandTool.js"></script>
+    <script src="lineToTool.js"></script>
+    <script src="sprayCanTool.js"></script>
+    <script src="mirrorDrawTool.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  	<div class="wrapper">
+      <div class="box header"
+           style="padding-left: 70px">N&amp;B drawing
+        <button id="clearButton"
+                style="margin-left: 30px">Clear</button>
+        <button id="saveImageButton">Save Image</button>
+        <button id="loadImageButton">Load Image</button>
+        <button id="blurImageButton">Blur Image</button>
+        <button id="thresholdImageButton">Threshold Image</button>
+        <button id="grayImageButton">Gray Image</button>
+        <button id="invertImageButton">Invert Image</button>
+        <button id="posterizeImageButton">Posterize Image</button>
+        <button id="erodeImageButton">Erode Image</button>
+      </div>
+      <div class="box" id="sidebar"></div>
+      <div id="content"></div>
+      <div class="box colourPalette"></div>
+      <div class="box options">
+        </div>
+	</div>
+  </body>
+</html>
